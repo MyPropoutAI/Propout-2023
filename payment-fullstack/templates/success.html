@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fund Wallet</title>
+<meta property='og:title' content= 'payment'>
+<meta property='og:image' content= ''>
+<link rel='icon' type='image/x-icon' href=''>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class='logo'><button class="but" onclick="fund()"><i class="fa fa-arrow-left" style="font-size:15px"></i></button><br><img src="{{ url_for('static', filename='assets/logo.jpg')}}" class="img"/></div>
+
+<div class="body">
+<div class='title'>Transaction Successful!</div>
+<div class="step"><p>Click below to go to dashboard</p></div>
+<button type="submit" class="sub"><a href='{{ url_for("home") }}'>Dashboard</a></button>
+</div>
+</body>
+
+<!--// <script>-->
+<!--// function fund(){-->
+<!--// 	window.location.href="wallet.php";-->
+<!--// }-->
+<!--// </script>-->
+</html>
